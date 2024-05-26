@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+
+
+body {
+    /* background-color: rgb(2, 41, 28); */
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+
+}
+.cabecalho {
+    margin: 3% 32%;
+}
+.cabecalho__navegacao{
+    display: flex;
+    margin-left: 20%;
+    gap: 80px;
+    
+}
+.cabecalho__navegacao__link{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+.cabecalho__navegacao__link:hover{
+    color: rgb(180, 178, 178)
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.logo {
+    display: flex;
+}
+
+.logo:nth-child(2) {
+    transition-delay: 200ms;
+}
+.logo:nth-child(3) {
+    transition-delay: 400ms;
+    
+}
+.logo:nth-child(4) {
+    transition-delay: 500ms;
+}
+
+
+
+/* backgroun css animation */
+body {
+    background: radial-gradient(circle, #000, #0c1e3f);
+}
+.background span{
+    position: fixed;
+    animation: animate 2s linear infinite;
+}
+
+
+.background span i {
+    color: aliceblue;
+    font-size: 1rem;
+}
+.background span:nth-child(1) {
+    left: 60px;
+    animation-delay: 0.6s;
+    top: 5%;
+}
+
+.background span:nth-child(2) {
+    left: 10%;
+    animation-delay: 2s;
+    top: 40%;
+}
+
+.background span:nth-child(3) {
+    left: 20%;
+    animation-delay: 5s;
+    top: 15%;
+}
+
+.background span:nth-child(4) {
+    left: 26%;
+    animation-delay: 4s;
+    top: 67%;
+}
+
+.background span:nth-child(5) {
+    left: 40%;
+    animation-delay: .5s;
+    top: 85%;
+}
+
+.background span:nth-child(6) {
+    left: 50%;
+    animation-delay: 5s;
+    top: 23%;
+}
+
+.background span:nth-child(7) {
+    left: 60%;
+    animation-delay: 6s;
+    top: 65%;
+}
+
+.background span:nth-child(8) {
+    left:70%;
+    animation-delay: 3.5s;
+    top: 12%;
+}
+
+.background span:nth-child(9) {
+    left: 80%;
+    animation-delay: 9s;
+    top: 75%;
+}
+
+.background span:nth-child(10) {
+    left: 90%;
+    animation-delay: 3s;
+    top: 14%;
+}
+.box-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 1;
+}
+.text-area h2{
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    font-family: montserrat;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+.text-area h2 b{
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
+    font-size: 2rem;
+}
+
+@keyframes animate {
+    0%{
+       opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
