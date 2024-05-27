@@ -1,14 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
 
 
-body {
-    /* background-color: rgb(2, 41, 28); */
-    color: #ffffff;
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao--azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
+}
+* {
     padding: 0;
     margin: 0;
-
 }
+
+body {
+    /* background-color: rgb(2, 41, 28);  */
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+    
+}
+
 .cabecalho {
     margin: 3% 32%;
 }
@@ -28,11 +43,141 @@ body {
     color: rgb(180, 178, 178)
 }
 
-section {
+/* section {
     display: grid;
     place-items: center;
     align-content: center;
     min-height: 100vh;
+} */
+
+.principal {
+    /* background-image: url("../assets/images/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;  */
+    align-items: center;
+    text-align: center;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 60% 50%;
+} 
+.container__titulo {
+    font-size: 1.7rem;
+    font-weight: 700;
+
+}
+.container__caixa{
+    margin: 2em 5em;
+}
+
+.container__botao {
+    background-color: var(--botao--azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+}
+.container__botao:hover{
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    text-decoration: none;
+}
+.container__aviso {
+    font-size: 0.8rem;
+    color: var(--cinza-secundario);
+}
+.container__imagem {
+    margin: 1em 0 2em 0;
+    
+}
+.secundario__imagem {
+    width: 70%;
+}
+
+.secundario {
+    align-items: center;
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-top: -4em;
+}
+.descricao__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--branco-principal);
+    margin-bottom: 0.3em;
+}
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1.5em;
+}
+
+.container__descricao {
+    padding-right: 5em;
+    
+}
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 2rem;
+}
+
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+    list-style-type: none;
+
+}
+.lista_item {
+    font-size: 1.5rem;
+    color: var(--branco-principal);;
+
+}
+.rodape {
+    text-align: center;
+    margin: 3em 3em;
+    
+}
+.rodape_lista {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 1em;
+   
+
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    margin-left: 2em;
+}
+.lista__link a:hover {
+    color: var(--botao--azul);
+
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 0.8rem;
 }
 
 .hidden {
@@ -56,6 +201,9 @@ section {
 
 .logo {
     display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    padding:0 1.5em 0 2em;
 }
 
 .logo:nth-child(2) {
@@ -71,10 +219,12 @@ section {
 
 
 
-/* backgroun css animation */
+/* background css animation */
 body {
-    background: radial-gradient(circle, #000, #0c1e3f);
+    /* background: radial-gradient(circle, #000, #0c1e3f); */
+    background-color: var(--cor-de-fundo);
 }
+
 .background span{
     position: fixed;
     animation: animate 2s linear infinite;
@@ -178,4 +328,39 @@ body {
     100%{
         opacity: 0;
     }
+}
+
+@media (max-width: 1100px ) {
+    .cabecalho{
+        padding-right: 5%;
+    }
+    .cabecalho__navegacao {
+        justify-content: center;
+        gap: 80px;
+    }
+    .container {
+        width: 50%;
+        display: flex;
+    }
+    .container__caixa {
+        margin: 10%;
+    }
+    .container__titulo {
+        width: auto;
+    }
+    .descricao__texto {
+        width: auto;
+    }
+    .secundario{
+        width: 50%;
+        display: flex;
+        margin-left: 15%;
+    }
+    .secundario__imagem{
+        margin-right: 10%;
+    }
+    .dispositivos__imagem{
+        width:80%;
+    }
+
 }

@@ -7,6 +7,9 @@
    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <script defer src="app.js"></script>
 </head>
 <body>
@@ -30,38 +33,99 @@
         <span><i class='bx bxs-star'></i></span>     
     </div>
 
-    <section class="hidden">
-        <h1>Test Effects</h1>
-        <p>Isso é um test de animação do css e JavaScript</p>
-    </section>
-    
-    <section>
-        <h2 class="hidden">Essas Palavras Devem surgir</h2>
-        <p class="hidden">
-            Estou testando esse site com animações
-            Essas palavram vão surgir ao scrollar a página. Sinta-se livre
-            para rolar pela página e testa-la!!
-        </p>
-    </section>
-
-    <section>
-        <h2 class="hidden">Se funcionar dá um joinha, kkkk (joinha é uma Antiguidade!!)</h2>
-        <p class="hidden">Obs: Essa Página não é responsiva, ou seja, em telas menores essa página vai quebrar toda!!(feita só para testes mesmo)</p>
-        <div class="logo">
-            <div class="logo hidden">
-                <img src="./assets/instagram.png" alt="instagram-image">
-            </div>
-            <div class="logo hidden">
-                <img src="./assets/twitter-novo.png" alt="twitter-novo-image">
-            </div>
-            <div class="logo hidden">
-                <img src="./assets/linkedin.png" alt="likedin-image">
-            </div>
-            <div class="logo hidden">
-                <img src="./assets/twitch.png" alt="twitch-image">
-            </div>
+    <section class="container principal">
+        <div class="container__caixa"> 
+            <h1 class="container__titulo">Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um preço único</h1>
+            <img src="./assets/images/Combo.png" alt="o combo+ é a junção do alura+ e o alura língua" class="container__imagem">
+            <a href="https://hugo-hezro-portifolio.vercel.app/" class="container__botao" target="_blank">Acesse meu Site</a>
+            <a class="container__botao botao_secundario" href="#">Assinar somente o Alura+</a>
+            <p class="container__aviso">*O preço pode variar caso a assinatura seja feita em outros planos.</p>
         </div>
     </section>
+    
+    <section class="container secundario hidden">
+        <img class="secundario__imagem" src="./assets/images/Plataformas.png" alt="Um monitor e um celular">
+        <div class="container__descricao">
+            <h2 class="descricao__titulo">Assista do seu jeito</h2>
+            <p class="descricao__texto">Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de cursos não para de crescer.</p>
+        </div>
+    </section>
+
+    <section class="container secundario hidden">
+        <div class="container__descricao">
+            <p class="descricao__texto">Só o Combo+ oferece Alura+ e Alura Língua juntos para você ter acesso a cursos de diversas áreas da 
+                tecnologia e aprender inglês ou espanhol, onde e como quiser.
+            </p>
+            <a class="container__botao secundario__botao" href="#">Assinar Combo+</a>
+        </div>
+        <img class="secundario__imagem" src="./assets/images/Telas.png" alt="Tela da alura plus e do alura lingua">
+    </section>
+
+    <section class="container secundario hidden">
+        <img class="secundario__imagem" src="./assets/images/Notebook.png" alt="Notebook-imagem">
+        <div class="container__descricao">
+            <h2 class="descricao__titulo">Baixe seus cursos</h2>
+            <p class="descricao__texto">
+                Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, 
+                até mesmo sem internet.
+            </p>
+        </div>
+    </section>
+    
+    <section class="dispositivos hidden">
+        <h2 class="dispositivos__titulo">Disponivel nos seus dispositivos favoritos</h2>
+        <ul class="dispositivos__lista">
+            <li>
+                <img class="dispositivos__imagem" src="./assets/images/tv.png" alt="televisao-imagem">
+                <h3 class="lista_item">TV</h3>
+            </li>
+            <li>
+                <img class="dispositivos__imagem" src="./assets/images/computador.png" alt="computador-imagem">
+                <h3 class="lista_item">Computador</h3>
+            </li>
+            <li>
+                <img class="dispositivos__imagem"  src="./assets/images/celular.png" alt="celular-imagem">
+                <h3 class="lista_item">Celular</h3>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="rodape">
+        <div class="logo">
+            <div class="logo hidden">
+                <a href="https://www.instagram.com/hugohezro/" target="_blank"><img src="./assets/icones/instagram.png" alt="instagram-imagem"></a>
+            </div>
+            <div class="logo hidden">
+                <a href="https://x.com/i/flow/login?redirect_after_login=%2Fhugohez" target="_blank"><img src="./assets/icones/twitter-novo.png" alt="twitter-novo-image"></a>
+            </div>
+            <div class="logo hidden">
+                <a href="https://br.linkedin.com/in/hugo-hezro" target="_blank"><img src="./assets/icones/linkedin.png" alt="likedin-image"></a>
+            </div>
+            <div class="logo hidden">
+                <a href="https://www.twitch.tv/login" target="_blank"><img src="./assets/icones/twitch.png" alt="twitch-image"></a>
+            </div>
+        </div>
+        <ul class="rodape_lista">
+            <li class="lista__link">
+                <a href="#">Idioma</a>
+            </li>
+            <li class="lista__link">
+                <a href="#">Dispositivos compatíveis</a>
+            </li>
+            <li class="lista__link">
+                <a href="#">Ajuda</a>
+            </li>
+        </ul>
+            <p class="rodape__texto">
+                ® 2021 Alura, Alura+ e Alura Língua. Todos os direitos reservados. Serviço de assinatura paga. 
+                Conteúdo sujeito a disponibilidade. 
+            </p>
+            <p class="rodape__texto">
+                Alura+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Alura+ é comercializado por Aovs Sistemas de Informática S.A., Rua Vergueiro, 3185 - Liberdade,
+                 São Paulo - SP, 04101-300, Brasil e CNPJ 05.555.382/0001-33
+            </p>
+        
+    </footer>
 
     
 </body>
