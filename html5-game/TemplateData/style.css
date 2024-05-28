@@ -138,6 +138,3 @@ body {
     }
 }
 
-@media (max-height:500px) and (max-width: 100px){
-    #unity-container { position: relative }
-}

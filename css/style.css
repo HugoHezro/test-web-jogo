@@ -21,6 +21,7 @@ body {
     font-family: var(--fonte-principal);
     font-size: 1rem;
     font-weight: 400;
+    min-height: 100vh;
     
 }
 
@@ -381,6 +382,11 @@ body {
     }
     .dispositivos__imagem{
         width:80%;
+    }
+    .rodape {
+       width:50%;
+       margin-top: 50%;
+       margin-left: 25%;
     }
 
 }
